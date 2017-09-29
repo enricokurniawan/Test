@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Form Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lib/w3.css">
+	<link rel="stylesheet" href="lib/font-awesome.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="lib/colorThemes/w3-theme-blue-grey.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// select all
+			$(".selectallcheckbox").click(function () {
+				if ($(this).prop("checked")) {
+					$(this).siblings().attr("checked", true);
+				}
+				else {
+					$(this).siblings().attr("checked", false);
+				}
+			})
+
+
+			// hint
+
+			// jQuery for password meter
+
+		});
+	</script>
+
+</head>
+
+<body class="w3-theme-l4">
+	<header class="w3-top w3-theme">
+		<div class="w3-bar w3-theme w3-large w3-padding">
+			<span class="w3-xxlarge" style="font-family: abril">Form Design</span>
+		</div>
+	</header>
+
+	<div class="w3-container" style="width: 100%; margin-top: 77px; overflow: y;">
+		<div class="w3-card w3-white w3-padding">
+			<h1 class="w3-xlarge">M0601</h1>
+			<!-- Jawaban M0601 -->
+			<input type="checkbox" class="selectallcheckbox">&nbsp Select All</input><br>
+			<input type="checkbox">&nbsp Appetizer</input><br>
+			<input type="checkbox">&nbsp Main Course</input><br>
+			<input type="checkbox">&nbsp Dessert</input><br>
+		</div>
+		<hr>
+		<div class="w3-card w3-white w3-padding">
+			<h1 class="w3-xlarge">M0602</h1>
+			<!-- Jawaban M0602 -->
+			<div style="margin:0px; width:500px; padding-bottom:8px;">
+				<label>Property Search</label>
+				<div id="radioinput" style="float:right;">
+					<input type="radio" name="radiobutton" value="forsale" checked>&nbspFor Sale</input>
+					<input type="radio" name="radiobutton" value="forrent">&nbspFor Rent</input>
+				</div>
+				<br>
+				<input id="propertysearchbox" type="text" placeholder="Enter a country, city, neighborhood, or U.S. Postal Code" style="width:500px; margin-top:5px;"></input><br>
+				<button class="w3-button w3-teal" style="margin-top:5px;">Search</button>
+			</div>
+		</div>
+		<hr>
+		<div class="w3-card w3-white w3-padding">
+			<h1 class="w3-xlarge">M0603</h1>
+			<!-- Jawaban M0603 -->
+			<label>12 digits Card Number: </label>
+			<input type="text" style="width:40px;" pattern="[0-9]" maxlength="3"></input>
+			<input type="text" style="width:40px;" pattern="[0-9]" maxlength="3"></input>
+			<input type="text" style="width:40px;" pattern="[0-9]" maxlength="3"></input>
+			<input type="text" style="width:40px;" pattern="[0-9]" maxlength="3"></input>
+
+			<br><br>
+
+			<label>Valid Until: </label>
+			<input type="date"></input>
+		</div>
+		<hr>
+		<div class="w3-card w3-white w3-padding">
+			<h1 class="w3-xlarge">M0604</h1>
+			<!-- Jawaban M0604 -->
+			<label>Full Name</label>
+			<input type="text"></input>
+			<span class="spaninfo"></span>
+			<i class="fa fa-info-circle"></i>
+			
+		</div>
+		<hr>
+		<div class="w3-card w3-white w3-padding">
+			<h1 class="w3-xlarge">M0605</h1>
+			<!-- Jawaban M0605 -->
+		</div>
+	</div>
+</body>
+
+</html>
